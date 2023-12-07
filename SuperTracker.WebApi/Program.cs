@@ -1,3 +1,6 @@
+using System.Text;
+using RabbitMQ.Client;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,11 +19,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/track", (HttpRequest request) =>
 {
-  
+  var userAgent = request.Headers.UserAgent;
+  var referer = request.Headers["Referer"];
+
+  return Results.Ok(new { userAgent, referer });
 })
-.WithName("GetWeatherForecast")
+.WithName("Track")
 .WithOpenApi();
 
 app.Run();

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6rn7fMYhJWtB0EKKzmHU5EESAJ15UF6j1Okv453zh6k=",
+  "Source": "SuperTracker.WebApi",
+  "BasePath": "_content/SuperTracker.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

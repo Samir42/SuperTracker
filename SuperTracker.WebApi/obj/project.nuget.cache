@@ -1,16 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "VdxbBcb62ezAkN2pAmATXNm5nKwV3P+KiC/ElpKPvEfifpTtR29FbKVVnNe+aumQqCdSZ6rg39FO4tbyFEaxyg==",
+  "dgSpecHash": "hwxVDYsSjVCqW3Gp5B5fvjx85kGN4P5fT1g15lX5+AJIqtOAz+GVxE2JoaONZwMCsMLaNxU8issafLX8l7LfZQ==",
   "success": true,
   "projectFilePath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/SuperTracker.WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/samirosmanov/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/samirosmanov/.nuget/packages/rabbitmq.client/6.7.0/rabbitmq.client.6.7.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/Users/samirosmanov/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/samirosmanov/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

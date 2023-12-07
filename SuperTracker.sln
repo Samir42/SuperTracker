@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.WebApi", "SuperTracker.WebApi\SuperTracker.WebApi.csproj", "{03DE2FE5-1AAE-44C8-8A0F-73C53987B7A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Storage", "SuperTracker.Storage\SuperTracker.Storage.csproj", "{0DE69C91-07D8-4ED2-B25E-C9D620D249E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackLogger", "Services\TrackLogger\TrackLogger.csproj", "{8A25A0EF-6515-40FA-A145-3D340A3A1E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,12 @@ Global
 		{0DE69C91-07D8-4ED2-B25E-C9D620D249E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DE69C91-07D8-4ED2-B25E-C9D620D249E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DE69C91-07D8-4ED2-B25E-C9D620D249E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A25A0EF-6515-40FA-A145-3D340A3A1E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A25A0EF-6515-40FA-A145-3D340A3A1E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A25A0EF-6515-40FA-A145-3D340A3A1E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A25A0EF-6515-40FA-A145-3D340A3A1E90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A25A0EF-6515-40FA-A145-3D340A3A1E90} = {6E0D5F60-0726-4B95-9A7D-93750DE23091}
 	EndGlobalSection
 EndGlobal
