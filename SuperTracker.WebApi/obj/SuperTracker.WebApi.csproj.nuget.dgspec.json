@@ -128,6 +128,81 @@
         }
       }
     },
+    "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Infrastructure/SuperTracker.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Infrastructure/SuperTracker.Infrastructure.csproj",
+        "projectName": "SuperTracker.Infrastructure",
+        "projectPath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Infrastructure/SuperTracker.Infrastructure.csproj",
+        "packagesPath": "/Users/samirosmanov/.nuget/packages/",
+        "outputPath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/samirosmanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Core/SuperTracker.Core.csproj": {
+                "projectPath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Core/SuperTracker.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/SuperTracker.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -155,6 +230,9 @@
               },
               "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Core/SuperTracker.Core.csproj": {
                 "projectPath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Core/SuperTracker.Core.csproj"
+              },
+              "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Infrastructure/SuperTracker.Infrastructure.csproj": {
+                "projectPath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.Infrastructure/SuperTracker.Infrastructure.csproj"
               }
             }
           }

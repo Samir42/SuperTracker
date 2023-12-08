@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Core", "SuperTracker.Core\SuperTracker.Core.csproj", "{CBBBFF88-0085-4304-B249-15BBDFF06605}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Infrastructure", "SuperTracker.Infrastructure\SuperTracker.Infrastructure.csproj", "{0BDB1B82-B285-400E-9FB6-4887422F3F88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{CBBBFF88-0085-4304-B249-15BBDFF06605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBBBFF88-0085-4304-B249-15BBDFF06605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBBBFF88-0085-4304-B249-15BBDFF06605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDB1B82-B285-400E-9FB6-4887422F3F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDB1B82-B285-400E-9FB6-4887422F3F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDB1B82-B285-400E-9FB6-4887422F3F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDB1B82-B285-400E-9FB6-4887422F3F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A25A0EF-6515-40FA-A145-3D340A3A1E90} = {6E0D5F60-0726-4B95-9A7D-93750DE23091}

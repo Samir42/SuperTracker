@@ -39,3 +39,5 @@
 /Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/bin/Debug/net8.0/SuperTracker.Core.dll
 /Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/bin/Debug/net8.0/SuperTracker.Application.pdb
 /Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/bin/Debug/net8.0/SuperTracker.Core.pdb
+/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/bin/Debug/net8.0/SuperTracker.Infrastructure.dll
+/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/bin/Debug/net8.0/SuperTracker.Infrastructure.pdb

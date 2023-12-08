@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="../SuperTracker.Application/SuperTracker.Application.csproj" />
     <ProjectReference Include="../SuperTracker.Core/SuperTracker.Core.csproj" />
+    <ProjectReference Include="../SuperTracker.Infrastructure/SuperTracker.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
