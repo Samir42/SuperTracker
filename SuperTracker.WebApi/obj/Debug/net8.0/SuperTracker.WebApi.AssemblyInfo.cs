@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperTracker.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bec8aba333499f04543572834bfcf52dd1f66215")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3314590fc4a6af2054c3093d86efdfca662c875d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperTracker.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperTracker.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

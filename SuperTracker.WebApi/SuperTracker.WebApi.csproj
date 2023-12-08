@@ -13,4 +13,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../SuperTracker.Application/SuperTracker.Application.csproj" />
+    <ProjectReference Include="../SuperTracker.Core/SuperTracker.Core.csproj" />
+  </ItemGroup>
+
 </Project>

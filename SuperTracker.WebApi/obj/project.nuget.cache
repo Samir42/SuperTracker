@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "hwxVDYsSjVCqW3Gp5B5fvjx85kGN4P5fT1g15lX5+AJIqtOAz+GVxE2JoaONZwMCsMLaNxU8issafLX8l7LfZQ==",
+  "dgSpecHash": "b5heEFmwVkxQduJ9YKOzNdg0JMyVrn3OL5OEVylEC3WxEJjJlzOLE32T/Ipw3zKdRwJ4osZ7tJXSjXspU/Dqow==",
   "success": true,
   "projectFilePath": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/SuperTracker.WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/samirosmanov/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/samirosmanov/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/samirosmanov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/samirosmanov/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/rabbitmq.client/6.7.0/rabbitmq.client.6.7.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/samirosmanov/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

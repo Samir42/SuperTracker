@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "6rn7fMYhJWtB0EKKzmHU5EESAJ15UF6j1Okv453zh6k=",
+  "Hash": "2CQmjo+NMsmHFKcl41vaNY6OMx4sw3ivJldLuYhiQFQ=",
   "Source": "SuperTracker.WebApi",
   "BasePath": "_content/SuperTracker.WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "SuperTracker.WebApi/wwwroot",
+      "Source": "SuperTracker.WebApi",
+      "ContentRoot": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/wwwroot/",
+      "BasePath": "_content/SuperTracker.WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/wwwroot/Assets/asset.gif",
+      "SourceId": "SuperTracker.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samirosmanov/Desktop/SuperTracker/src/SuperTracker.WebApi/wwwroot/",
+      "BasePath": "_content/SuperTracker.WebApi",
+      "RelativePath": "Assets/asset.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Assets/asset.gif"
+    }
+  ]
 }
