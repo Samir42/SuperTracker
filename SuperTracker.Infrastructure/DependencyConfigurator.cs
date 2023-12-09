@@ -22,6 +22,7 @@ public static class DependencyConfigurator
                       HostName = rabbitMQConfiguration.HostName,
                       UserName = rabbitMQConfiguration.Username,
                       Password = rabbitMQConfiguration.Password,
+                      Port  = rabbitMQConfiguration.Port
                   };
                   return factory;
               });
