@@ -1,31 +1,53 @@
 ﻿using System.Text;
+using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using TrackLogger.Configuration;
+using TrackLogger.Dtos;
+using TrackLogger.LogServices;
+
+string FILE_NAME = "config.json";
+
+var builder = new ConfigurationBuilder()
+    .AddJsonFile(FILE_NAME)
+    .Build();
+
+var logConfiguration = new Logconfiguration();
+builder.Bind(Logconfiguration.Position, logConfiguration);
+
+var RabbitMQConfiguration = new RabbitMQConfiguration();
+builder.Bind(RabbitMQConfiguration.Position, RabbitMQConfiguration);
 
 Task.Delay(10000).Wait();
 
+var factory = new ConnectionFactory { 
+    HostName = RabbitMQConfiguration.HostName, 
+    Port=RabbitMQConfiguration.Port, 
+    UserName=RabbitMQConfiguration.Username, 
+    Password= RabbitMQConfiguration.Password};
 
-var factory = new ConnectionFactory { HostName = "rabbitmq", Port=5672, UserName="guest", Password="guest" };
 using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
 
-channel.QueueDeclare(queue: "SuperTracker",
+channel.QueueDeclare(queue: RabbitMQConfiguration.QueueName,
                      durable: false,
                      exclusive: false,
                      autoDelete: false,
                      arguments: null);
 
-Console.WriteLine(" [*] Waiting for messages.");
-
 var consumer = new EventingBasicConsumer(channel);
-consumer.Received += (model, ea) =>
+consumer.Received += async (model, ea) =>
 {
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
-    Console.WriteLine($" [x] Received {message}");
+    
+    var trackingDetail = JsonSerializer.Deserialize<TrackingDetailsDto>(message);
+
+   await new VisitLogger().LogAsync(logConfiguration.LogFilePath, trackingDetail!);
 };
 
-channel.BasicConsume(queue: "SuperTracker",
+channel.BasicConsume(queue: RabbitMQConfiguration.QueueName,
                      autoAck: true,
                      consumer: consumer);
 
