@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using SuperTracker.Application.Dtos;
 using SuperTracker.Core.Configurations;
 using SuperTracker.Core.Interfaces;
+using SuperTracker.WebApi.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplication();
@@ -9,6 +10,9 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
@@ -20,6 +24,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+
+app.UseExceptionHandler();
 
 app.MapGet("/track", (HttpRequest request,
   [FromServices] IRabbitMQService rabbitMQService,
