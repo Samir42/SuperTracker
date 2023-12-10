@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SuperTracker.Application.Dtos;
 using SuperTracker.Core.Configurations;
@@ -20,10 +19,7 @@ if (app.Environment.IsDevelopment())
   app.UseSwaggerUI();
 }
 
-app.MapGet("/", () =>
-{
-  return Results.Ok("Hello World!");
-});
+app.UseStaticFiles();
 
 app.MapGet("/track", (HttpRequest request,
   [FromServices] IRabbitMQService rabbitMQService,
