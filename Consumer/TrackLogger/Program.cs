@@ -19,6 +19,11 @@ builder.Bind(Logconfiguration.Position, logConfiguration);
 var RabbitMQConfiguration = new RabbitMQConfiguration();
 builder.Bind(RabbitMQConfiguration.Position, RabbitMQConfiguration);
 
+
+// Here I wait for 10 sec for the rabbit mq container to be up. 
+// Actually there is wait-for-it.sh script that can be used to wait for the container to be up.
+// But it would take a bit of time to use. Basically it is just waiting for a port to be up. 
+// BTW - depends_on in docker-compose just waits for the container to be up, not the service.
 Task.Delay(10000).Wait();
 
 var factory = new ConnectionFactory { 
