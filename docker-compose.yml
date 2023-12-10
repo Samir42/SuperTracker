@@ -24,6 +24,18 @@ services:
     depends_on:
       - rabbitmq
 
+  supertracker-consumer:
+    image: "track-logger"
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    build:
+      context: ./Consumer/TrackLogger
+      dockerfile: Dockerfile
+    networks:
+      - tracker-network
+    depends_on:
+      - rabbitmq
+
 networks:
   tracker-network:
     driver: bridge
